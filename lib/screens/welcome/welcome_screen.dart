@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:quiz/constants.dart';
+import 'package:quiz/screens/quiz/quiz_screen.dart';
 import 'package:websafe_svg/websafe_svg.dart';
 
 class WelcomeScreen extends StatelessWidget{
@@ -35,7 +37,7 @@ class WelcomeScreen extends StatelessWidget{
             ),
             Spacer(),
             InkWell(
-              onTap: (){},
+              onTap: ()=> Get.to(QuizScreen()),
               child: Container(
                 width: double.infinity,
                 alignment: Alignment.center,
